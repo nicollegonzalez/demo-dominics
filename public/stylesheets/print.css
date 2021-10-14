@@ -1,0 +1,160 @@
+
+@page {
+  size: letter;
+}
+
+.none.print{
+  display: inline;
+}
+
+
+
+body{
+  width: fit-content;
+  margin: 0;
+  float: none;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  /* border: 1px solid black; */
+}
+
+header, #covid-modal, nav, #leftNav, #rightNav, footer, .career{
+  display:none;
+}
+
+div.none.print{
+  min-height: 0.5em;
+  width: 100%;
+}
+
+div.none.print.line{
+  display: block;
+}
+
+div.none.print.line.thick{
+  height: 12px;
+  /* background-color: black; */
+  border-bottom: 4px solid black;
+}
+
+label{
+  margin-top: 1em;
+}
+
+input{
+  border: none;
+  border-bottom: 2px solid black;
+  min-height: 1.7em; 
+  background-color: white;
+  font-family: Georgia, serif;
+  font-size: 16px;
+}
+
+table, tbody, th, td {
+  border-collapse: collapse;
+}
+
+table, tbody, tr{
+  width: 100%;
+}
+
+th, td{
+  width: 16vw;
+  height: 50px;
+  border: 1px solid black;
+}
+
+td{
+  height: 60px;
+}
+
+h1, h2, h3, h4, h5, label {
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+#employment-application-title, div.none.print img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1em;
+
+}
+
+div.none.print img {
+  max-width: 350px;
+  max-height: 90px;
+  object-fit: cover;
+  filter: grayscale();
+}
+
+#career-application-form > *{
+  display: inline;
+}
+
+#career-application-form label{
+  margin-top: 0.5em;
+  font-size: 13px;
+}
+#career-application-form button{
+  display: none;
+}
+
+/* #career-application-form div.form-group, */
+table, label{
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+#career-application-form .form-group.column{
+}
+
+/* #career-application-form h3:first-of-type */
+#career-application-form .education{
+  color: purple;
+  break-before: always;
+}
+
+#career-application-form textarea {
+  width: 100%;
+  min-height: 22px;
+  font-size: 16px;
+  cursor: text;
+  font: 400 13.3333px Georgia, serif;
+  border: none;
+  border-bottom: 2px solid black;
+  resize: none;
+}
+
+#career-application-form .date-range{
+}
+
+#career-application-form input[type|="month"] {
+  width: calc((100% - 1.5em - 1.5em - 12px) / 2);
+  max-width: calc((310px)/2);
+  font-size: 16px;
+}
+
+#social-security-input, #social-security-input-label{
+  display: inline;
+}
+
+#social-security-input{
+  color: white;
+}
+
+h3{
+  /* margin: 10px 0 0 ; */
+}
+
+/* hr{
+  display: block;
+  height: 1px;
+  background: transparent;
+  width: 100%;
+  border: none;
+  border-top: solid 1px #aaa;
+} */
+
+

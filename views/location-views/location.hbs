@@ -1,0 +1,66 @@
+<div id="mainContent">
+    <div class="location-intro">
+        <div class="logo">
+            <img src="/images/dominicslogodarkshadow.png" alt="Dominic's">
+        </div>
+        <p>Buon appetito!</p>
+    </div>
+    <div class="location-information">
+        <h1>{{location.locationName}} - {{location.locationCity}}</h1>
+        <div class="address">
+            <h2>Address:</h2>
+            <div>{{location.locationAddress.description}}</div>
+            <a href="{{location.locationAddress.addressURL}}" target="_blank">
+                <div>{{location.locationAddress.street}}</div>
+                <div>{{location.locationAddress.city}}, {{location.locationAddress.state}}
+                    {{location.locationAddress.zip}}</div>
+            </a>
+        </div>
+        <div class="hours">
+            <h2>Hours:</h2>
+            <div class="Hours">Sunday: {{location.locationHours.sunday}}</div>
+            <div class="Hours">{{location.locationHours.secondLabel}} {{location.locationHours.mondayThursday}}</div>
+            <div class="Hours">{{location.locationHours.thirdLabel}} {{location.locationHours.fridaySaturday}}</div>
+        </div>
+        <div class="contact">
+            <h2>Contact:</h2>
+            <div><a href="tel:{{location.locationContact.locationPhoneNumber}}">Phone:
+                    {{location.locationContact.locationPhoneNumber}}</a></div>
+            <div><a href="mailto:{{location.locationContact.locationEmail}}">Email:
+                    {{location.locationContact.locationEmail}}</a></div>
+        </div>
+        {{!-- <iframe src="{{location.mapURL}}" width="100%" height="450" frameborder="0" style="border:0; filter: grayscale(100%);" allowfullscreen=""></iframe> --}}
+        {{!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14298.693055152396!2d-80.1726854!3d26.369428!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6e8712880c79d03d!2sDominic&#39;s%20I%20Pizza%20and%20Pasta!5e0!3m2!1sen!2sus!4v1583482760710!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0; filter: grayscale(100%);" allowfullscreen=""></iframe> --}}
+        <div id="map{{location.locationNumber}}"></div>
+    </div>
+    <div class="location-button menu-button">
+        <a href="{{location.menu}}" alt="menu" target="_blank">Menus</a>
+    </div>
+    {{!-- <div class="location-button menu-button">
+        <a href="{{location.dinnerMenu}}" alt="Dinner Menu">Dinner Menu</a>
+    </div>
+    <div class="location-button menu-button">
+        <a href="{{location.childrenMenu}}" alt="Children's Menu">Children's Menu</a>
+    </div> --}}
+    <div class="dominics-quote">
+        <p>Our Italian Specialties and Pizzas have generated a family following among residents and visitors alike. We
+            hope you will enjoy dining with us!</p>
+    </div>
+    <div class="gallery">
+        <h1>Restaurant Gallery</h1>
+        <div class="gallery-carousel">
+            <div id="arrow-left" class="arrow"></div>
+            <div class="gallery-carousel-slide">
+
+            </div>
+            <div id="arrow-right" class="arrow"></div>
+        </div>
+        <div class="center">
+            <div class="gallery-thumbnails"></div>
+        </div>
+
+    </div>
+    <div>
+        {{> dealsForm}}
+    </div>
+</div>

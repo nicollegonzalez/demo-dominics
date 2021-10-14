@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<!--// OPEN HTML //-->
+<html lang="en-US">
+
+
+<!--// OPEN HEAD //-->
+
+<head>
+
+  <!--// SITE META //-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+    content="Dominic’s is a neighborhood restaurant inspired by the cuisine and culture of Italy. We prepare every dish from scratch, combining fresh ingredients with a fresh New Yorker approach to classic Italian favorites." />
+  <meta name="keywords"
+    content="dominics, pizza, pasta, Boca Raton, Boca, Lake Worth and Boynton Beach, Palm Beach, italian, family, atmosphere, vibe, dishes, fresh ingredients, favorites, italian meals, cuisine" />
+  <meta name="google-site-verification" content="xWw60WKzpMMakTrUgQYKcOc94dTfFTjSo2e6t-L3_SY" />
+
+  <!--// SITE TITLE //-->
+  <title>Dominic's Pizza & Pasta</title>
+
+
+ 
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+
+
+  <!-- Facebook Meta -->
+  <meta property="og:title" content="Dominic's Pizza & Pasta" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Dominic's Pizza & Pasta" />
+  <meta property="og:description" content="If you love New York-Italian meals, you’re in for a treat.">
+  <meta property="og:image" content="http://nicollegonzalez.com/images/DominicsLogo1.png" />
+  <meta property="fb:app_id" content="" />
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dominic's Pizza & Pasta">
+  <meta name="twitter:description" content="If you love New York-Italian meals, you’re in for a treat.">
+  <meta property="twitter:image:src" content="http://nicollegonzalez.com/images/DominicsLogo1.png" />
+
+  <!-- Font Awesome Free Icons -->
+  {{!-- <script src={{font_awesome_api_url}} crossorigin="anonymous"></script> --}}
+
+  <!-- CSS Stylesheet -->
+  <link type="text/css" rel="stylesheet" href="/stylesheets/style.css" media="screen">
+  <link type="text/css" rel="stylesheet" href="/stylesheets/print.css" media="print">
+
+  <!-- Google Verification -->
+  <meta name="google-site-verification" content="076570GNLaoHEsN0kjjx1JZgbvPI9tlkXtob_PTMDeo" />
+
+
+
+  <!--// CLOSE HEAD //-->
+</head>
+
+<!--// OPEN BODY //-->
+
+<body>
+
+
+
+  <div id="wrapper">
+    <header id="information-header">
+      <p>
+        All restaurants now open!
+        <span><button alt="toggle COVID-19 updates" class="modal-tigger" id="covid-modal-trigger">Click here for the
+            latest COVID-19 updates</button></span></p>
+      {{!-- <p>Adjusted hours for each location below:</p>
+        <p>Dominic's I Pizza and Pasta Mon-Fri 11AM - 10PM</p>
+        <p>Dominic's II Pizza and Pasta Mon-Fri 11AM - 10PM</p>
+        <p>Dominic's III Pizza and Pasta Mon-Fri 11AM - 10PM</p>
+        <p>Dominic’s of Boynton Mon-Fri 11AM - 10PM</p> --}}
+    </header>
+    <div id="covid-modal" class="modal">
+      <div class="modal-content">
+        <h4>COVID-19 Update</h4>
+        <p>
+          As a responsibility to our community and our staff, we will be doing our part in contributing to a safer
+          environment to protect your health and well-being.
+          We are vigilant; following all federal, state and local health advisories related to this unprecedented
+          situation.
+        </p>
+        <p>
+          For your convenience, we are offering complimentary curbside service for all orders - if requested.
+          Alternatively, delivery is also available.
+        </p>
+        <p>In addition, we continue to maintain our heightened sanitary protocol to promote a safe dining experience and
+          work environment.
+          Our employees are being screened for any symptoms and asked to stay home if any symptoms found.
+        </p>
+        <p>
+          If any questions or concerns, do not hesitate to contact us.
+        </p>
+        <p>
+          -Dominic
+        </p>
+      </div>
+      <div class="modal-footer modal-tigger">
+        <a id="covid-modal-close-button" class="modal-button modal-close waves-effect waves-red" href="#">Close</a>
+      </div>
+    </div>
+    <nav role="navigation">
+      <ul class="nav-menu-large-screen hidden">
+        <li><a class="nav-menu-link" href="/">Home</a></li>
+        <li><a class="nav-menu-link" href="/locations">Locations</a></li>
+        <li><a class="nav-menu-link" href="/about">Our Story</a></li>
+        <li><a class="nav-menu-link" href="/careers">Careers</a></li>
+      </ul>
+    </nav>
+    <nav id="header" class="navbar" role="navigation">
+      <button class="hamburger" alt="toggle navigation menu">
+        <span class="dot"></span>
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+      </button>
+      <a class="logo" href="/" alt="Go to home page">
+        <img src="/images/DominicsLogo1.png" alt="Dominic's Logo">
+        {{!-- <img src="/images/dominicslogoellipsenew2.png" alt="Dominic's Logo"> --}}
+      </a>
+      <button class="hamburger" alt="toggle navigation menu">
+        <span class="dot"></span>
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+      </button>
+    </nav>
+
+
+
+    <div id="scrollingSegment">
+      <div id="midSection">
+        <div id="leftNav"></div>
+
+
+        {{{ body }}}
+
+
+        <nav id="rightNav" role="navigation">
+          <ul class="nav-menu">
+            <li><a class="nav-menu-link" href="/">Home</a></li>
+            <li><a class="nav-menu-link" href="/locations">Locations</a></li>
+            <li><a class="nav-menu-link" href="/about">Our Story</a></li>
+            <li><a class="nav-menu-link" href="/careers">Careers</a></li>
+          </ul>
+        </nav>
+
+      </div>
+      <footer id="footer">
+        {{!-- <p>© {{current_year}} Dominic's Pizza & Pasta. All Rights Reserved</p> --}}
+        {{!-- <a id="facebook-icon" alt="link to our facebook page" href="https://www.facebook.com"> --}}
+        {{!-- <img src="/images/facebooklogo.png" alt="facebook icon"> --}}
+        {{!-- </a> --}}
+        <div class="main-footer">
+          <div class="footer-content large-screen">
+            <h5>Links</h5>
+            {{!-- <p>You can use rows and columns here to organize your footer content.</p> --}}
+            <ul class="">
+              <li><a class="footer-link" href="/">Home</a></li>
+              <li><a class="footer-link" href="/about">Our Story</a></li>
+              <li><a class="footer-link" href="/locations">Locations</a></li>
+              <li><a class="footer-link" href="/locations/dominicsI">Dominic's I</a></li>
+              <li><a class="footer-link" href="/locations/dominicsII">Dominic's II</a></li>
+              <li><a class="footer-link" href="/locations/dominicsIII">Dominic's III</a></li>
+              <li><a class="footer-link" href="/locations/dominicsIV">Dominic's Boyton</a></li>
+              <li><a class="footer-link" href="/careers">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-social-content">
+            <h5>Social Media</h5>
+            <ul>
+              <li class="hidden none">
+                <span>Follow Dominic's I</span>
+                <a id="facebook-icon" class="icons hidden" alt="link to our facebook page"
+                  href="https://www.facebook.com" target="_blank" rel="noopener">
+                  <img src="/images/facebooklogo.png" alt="facebook icon">
+                </a>
+                <a id="instagram-icon" class="icons hidden" alt="link to Dominincs I Instagram Page"
+                  href="https://www.instagram.com/" target="_blank" rel="noopener">
+                  <img src="/images/IG_icon2.png" alt="facebook icon">
+                </a>
+              </li>
+              <li>
+                <span>Follow Dominic's II</span>
+                <a id="facebook-icon" class="icons" alt="link to our facebook page"
+                  href="https://www.facebook.com/Dominics-II-Pizza-Pasta-113411675359288/" target="_blank"
+                  rel="noopener">
+                  <img src="/images/facebooklogo.png" alt="facebook icon">
+                </a>
+                <a id="instagram-icon" class="icons hidden" alt="link to Dominincs I Instagram Page"
+                  href="https://www.instagram.com/" target="_blank" rel="noopener">
+                  <img src="/images/IG_icon2.png" alt="facebook icon">
+                </a>
+              </li>
+              <li>
+                <span>Follow Dominic's III</span>
+                <a id="facebook-icon" class="icons" alt="link to our facebook page"
+                  href="https://www.facebook.com/Dominics-III-Pizza-Pasta-364554182714/" target="_blank" rel="noopener">
+                  <img src="/images/facebooklogo.png" alt="facebook icon">
+                </a>
+                <a id="instagram-icon" class="icons" alt="link to Dominincs I Instagram Page"
+                  href="https://www.instagram.com/dominics_3/" target="_blank" rel="noopener">
+                  <img src="/images/IG_icon2.png" alt="facebook icon">
+                </a>
+              </li>
+              <li>
+                <span>Follow Dominic's Boyton</span>
+                <a id="facebook-icon" class="icons" alt="link to our facebook page"
+                  href="https://www.facebook.com/DominicsPasta/" target="_blank" rel="noopener">
+                  <img src="/images/facebooklogo.png" alt="facebook icon">
+                </a>
+                <a id="instagram-icon" class="icons" alt="link to Dominincs I Instagram Page"
+                  href="https://www.instagram.com/dominicsboyntonbeach/" target="_blank" rel="noopener">
+                  <img src="/images/IG_icon2.png" alt="facebook icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            <p>© {{current_year}} Dominic's Pizza & Pasta. All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src={{maps_api_url}}></script>
+  {{!-- <script type="text/javascript" src="/public/javascripts/gallary.js"></script>
+  <script type="text/javascript" src="/public/javascripts/googlemaps.js"></script>
+  <script type="text/javascript" src="/public/javascripts/modal.js"></script>
+  <script type="text/javascript" src="/public/javascripts/script.js"></script>
+  <script type="text/javascript" src="/public/javascripts/transitions.js"></script>
+  <script type="text/javascript" src="/public/javascripts/waves.js"></script>
+  <script type="text/javascript" src="/public/javascripts/carousel.js"></script> --}}
+  <script type="text/javascript" src="/javascripts/gallary.js"></script>
+  <script type="text/javascript" src="/javascripts/googlemaps.js"></script>
+  <script type="text/javascript" src="/javascripts/modal.js"></script>
+  <script type="text/javascript" src="/javascripts/script.js"></script>
+  <script type="text/javascript" src="/javascripts/transitions.js"></script>
+  <script type="text/javascript" src="/javascripts/waves.js"></script>
+  <script type="text/javascript" src="/javascripts/carousel.js"></script>
+
+
+
+  <!--// CLOSE BODY //-->
+</body>
+
+
+<!--// CLOSE HTML //-->
+
+</html>

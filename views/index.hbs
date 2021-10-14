@@ -1,0 +1,56 @@
+<div id="mainContent">
+  <div class="dominics-intro">
+      <div class="carousel">
+          {{!-- <i class="fas fa-arrow-left" id="arrow-left"></i> --}}
+          {{!-- <i class="fas fa-arrow-right" id="arrow-right"></i> --}}
+          <div id="arrow-left" class="arrow"></div>
+          <div class="logo">
+              <img src="/images/dominicslogodarkshadow.png" alt="Dominic's">
+              <p>Buon appetito!</p>
+          </div>
+          <div class="carousel-slide">
+              <div id="lastClone" class="slide"></div>
+              <div id="slide1" class="slide"></div>
+              <div id="slide2" class="slide"></div>
+              <div id="slide3" class="slide"></div>
+              <div id="slide4" class="slide"></div>
+              <div id="slide5" class="slide"></div>
+              <div id="firstClone" class="slide"></div>
+          </div>
+          <div id="arrow-right" class="arrow"></div>
+      </div>
+  </div>
+  <div class="dominics-quote">
+    <p>We strive to serve fine Italian specialties prepared to order, using only the freshest ingredients. It's our goal to present to you with excellent Italian food in a charming and friendly setting.</p>
+  </div>
+  <div class="locations">
+      <h3 class="locations-heading">Locations</h3>
+      <div></div>
+      {{!-- <div class="location dominics-one">
+          <a href="/locations/dominicsI" alt="Dominic's 1 - Boca Raton">Dominic's I - Boca Raton</a>
+          <div class="location-title-background"></div>
+      </div>
+      <div class="location dominics-two">
+          <a href="/locations/dominicsII" alt="Dominic's 2 - Boca Raton">Dominic's II - Boca Raton</a>
+          <div class="location-title-background"></div>
+      </div>
+      <div class="location dominics-three">
+          <a href="/locations/dominicsIII" alt="Dominic's 3 - Lake Worth">Dominic's III - Lake Worth</a>
+          <div class="location-title-background"></div>
+      </div>
+      <div class="location dominics-four">
+          <a href="/locations/dominicsV" alt="Dominic's 4 - Lake Worth">Dominic's IV - Boynton Beach</a>
+          <div class="location-title-background"></div>
+      </div> --}}
+      {{#each locations}}
+          {{> location}}
+      {{/each}}
+  </div>
+  <div class="location-button">
+      <a href="/locations" alt="Find a location">Find a Dominic's</a>
+  </div>
+  <div class="dominics-quote">
+      <p>Our Italian Specialties and Pizzas have generated a family following among residents and visitors alike. We hope you will enjoy dining with us!</p>
+  </div>
+  
+</div>
